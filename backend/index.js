@@ -115,7 +115,7 @@ app.get("/getlast", (req, res) => {
     "SELECT * FROM tablefordata ORDER BY id_data DESC LIMIT 1",
     (error, results) => {
       if (error) throw error;
-      res.send(results);
+      res.send(results); //may
     }
   );
 });
